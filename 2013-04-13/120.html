@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
-<title>Help build LocalLux: A iOS membership/subscription service that allows members to sample great products from local businesses. on CollabFinder</title>
+<title>Help build NYC Traffic Noise API on CollabFinder</title>
 <meta name="description" content="The Place To Find Great Programmer, Designer, Artist and Writer Collaborators for Your Next Big Project">
 <meta name="author" content="CollabFinder.com">
  
@@ -19,22 +19,49 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/touch-icon-ipad.png"/>
 <link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-iphone4.png"/>
  
-<meta property="og:title" content="Help build LocalLux: A iOS membership/subscription service that allows members to sample great products from local businesses. on CollabFinder"/>
-<meta property="og:description" content="UPDATE 03/13/2013: LocalLux website has launched! sign up for beta access at:
+<meta property="og:title" content="Help build NYC Traffic Noise API on CollabFinder"/>
+<meta property="og:description" content="The following is fully explained in a blog post at:
 
-www.localluxapp.com
+http://planetjeffro.com/post/46796717580/nyc-noise-map-api-idea
 
-LocalLux aka &quot;Local Luxury&quot; is a subscription based application with a business model similar to existing product subscription companies such as 12 Society and The Five Four Club.
+&gt;&gt; iOS app that captures noise:
 
-The missing component in both the mentioned companies is their local impact. There are great small businesses in our local area that offer great products but don&#039;t have the nearby foot traffic of a Chicago Michigan Ave or New York Madison Ave.
+This would be a “data collecting” app (so, not much design) that one would put on a windowsill, for example. The app would passively record traffic noise.  It would be calibrated with an acceptable decibel level as normal.  Any spike (ie, a horn or a siren, etc) would get captured to the cloud along with the location, timestamp, and other meta data.  It would also count the sounds in a backend database.  It’s basically a sound activate recorder, but it would require some calibration and would actually record the audio files in a more useful way.
 
-LocalLux goal is simple. Provide a smartphone merch environment where local shops can showcase new products via the smartphone application. Consumers sign a monthly subscription agreement and can choose to have the items mailed or packaged up for a pickup. These items are personally selected by our product stylist. It&#039;s their job to make these packages items personal and customized to the customers delight. A tailor made customer service experience is by some reserved for luxury. For LocalLux members that&#039;s everyone experience.   Items can range from premium coffee, concert tickets! Businesses who sign up with LocalLux will gain the audience and product impact they&#039;ve been looking for without the cost of a pricey shopping location.
+&gt;&gt; A website and back-end to classify captured noise:
+The above app will be importing many isolated sound files of noises (honking, ambulance sirens, etc) and the classification will be done automatically or through crowdsourcing/outsourcing.
 
-The product is in the brainstorming phase and I&#039;m looking for a programmer and writer to consult on the projects scope.">
+&gt;&gt; Public API of NYC Noise:
+
+All of the above will feed into a publicly accessible API that could be queried by:
+
+GPS/location + radius
+Type of noise
+Date/Time
+Aggregate by cohort (hour, day of week, type of noise, location, etc)
+The API would also deliver the actual recordings so users could quickly create sound maps as well to hear what an intersection sounds like, for example.
+
+This API would represent the first data-set that measures NYC noise.
+
+&gt;&gt; Imagine the applications of a Noise API:
+
+I’d create a simple “noise map” website using the noise API that would allow users to explore NYC through noise.  This would merely represent a use-case of the API.  There are many, many other uses of the data that I can imagine, and I know the ingenuity and innovation of NYC techies will find even more interesting ways to utilize the data.
+
+They say you can’t manage what you can’t measure.
+
+Earlier this year, New York City decided to remove all the “Don’t Honk” signs.  (http://www.nytimes.com/2013/01/29/nyregion/new-york-removes-no-honking-signs.html?_r=0)  A paragraph jumped out at me:
+
+// But interviews with officials, residents and cabbies suggest that it is virtually impossible to tell whether honking has decreased in New York City, or to gauge how effective the signs have been. Many said they believed honking had been curbed somewhat, but wondered if they had simply stopped noticing it, allowing the horn to become the ambient soundtrack of their days.//
+
+I call BS on that. It is not impossible, it just hasn’t been tried yet.  I hate honking with a passion and right now what’s needed is a general way to measure traffic noise.
+
+According to NYC Big Apps, one of the options is to produce a new data set that the city can use.
+
+I am looking for an iOS developer who is familiar with the recording capabilities of an iphone. I am also looking for a web developer who is familiar with building an API backend and would have a sense of data architecture for something like this.">
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="CollabFinder"/>
-<meta property="og:url" content="http://collabfinder.com/project/22/LocalLux-A-iOS-membershipsubscription-service-that-allows-members-to-sample-great-products-from-local-businesses">
-<meta property="og:image" content="//collabfinder.com/resize/collabfinder.assets/200/projects-photo/c086c60a19ca52d078105647806e390d.png">
+<meta property="og:url" content="http://collabfinder.com/project/120/NYC-Traffic-Noise-API">
+<meta property="og:image" content="//collabfinder.com/resize/collabfinder.assets/200/projects-photo/a3a31cdefa5ab2538fecc0ed07e98488.jpg">
 <meta property="fb:app_id" content="182489518521691"/>
  
 <link rel="stylesheet" href="//collabfinder.com/css/style.css?v=1365807841">
@@ -189,7 +216,7 @@ Projects</a>
 <a href="#" class="column last btn btn_small btn_outline j_prescreen"><strong>Sign&nbsp;Up</strong></a>
 <img class="fb_loading absolute off" src="/images/loader_2.gif"/>
 <form id="login_form" action="/login" method="POST" class="off">
-<input type="hidden" name="returnUri" value="http://collabfinder.com/project/22/LocalLux-A-iOS-membershipsubscription-service-that-allows-members-to-sample-great-products-from-local-businesses"/>
+<input type="hidden" name="returnUri" value="http://collabfinder.com/project/120/NYC-Traffic-Noise-API"/>
 <input type="hidden" name="uid" value=""/>
 </form>
 </div>
@@ -302,7 +329,7 @@ Login now</a>&nbsp;<img class="fb_loading off" src="/images/loader_2.gif"/>
 <div id="main" class="column span-25 bottomend-3">
 <div id="project_page">
 <center>
-<h1 class="page_title red" id="search_headline">LocalLux: A iOS membership/subscription service that allows members to sample great products from local businesses.</h1>
+<h1 class="page_title red" id="search_headline">NYC Traffic Noise API</h1>
 </center>
 <div class="clear"></div>
 <center>
@@ -314,49 +341,68 @@ Login now</a>&nbsp;<img class="fb_loading off" src="/images/loader_2.gif"/>
 <div class="column span-19 first">
  
 <div id="project-photo-galleria" class="column first last dark_bg photo_wrapper">
-<img src="//collabfinder.com/resize/collabfinder.assets/748/projects-photo/c086c60a19ca52d078105647806e390d.png"/>
-<img src="//collabfinder.com/resize/collabfinder/748/projects-photo/1a3347c1906b81c294388c0512f2670a.png"/>
-<img src="//collabfinder.com/resize/collabfinder/748/projects-photo/928d2398f3830f091e4cab13b998079f.jpg"/>
+<img src="//collabfinder.com/resize/collabfinder.assets/748/projects-photo/a3a31cdefa5ab2538fecc0ed07e98488.jpg"/>
 </div>
 <div class="column span-19 first last toppend-1 bottomend-1 dots">
-<center>
-<a data-position="0" href="#" class="photo_pager current"></a>
-<a data-position="1" href="#" class="photo_pager "></a>
-<a data-position="2" href="#" class="photo_pager "></a>
-</center>
 </div>
 <div class="clear toppend-1 border_t_g"></div>
  
-<h2 class="bottomend-half">Created by <a class="red_hover" href="http://collabfinder.com/person/randyellis.me">Randy Ellis</a></h2>
+<h2 class="bottomend-half">Created by <a class="red_hover" href="http://collabfinder.com/person/jeffnovich">Jeff Novich</a></h2>
 <div class="clear"></div>
 <div class="column first bottomend-1">
-<img src="https://graph.facebook.com/100002690755847/picture?type=square" class="avatar_large" align=right>
+<img src="https://graph.facebook.com/103757/picture?type=square" class="avatar_large" align=right>
 </div>
 <div class="column span-16 append-1 last">
-<h2 class="plain bottomend-1" id="about_creator">I'm a Designer in Chicago, IL who currently works at <a href="http://collabfinder.com/company/Kohactive">Kohactive</a>. Previously, I've worked at <a href="http://collabfinder.com/company/Classified+Ventures">Classified Ventures</a>, <a href="http://collabfinder.com/company/Cars.com">Cars.com</a>, <a href="http://collabfinder.com/company/Stichting+Appsterdam">Stichting Appsterdam</a>. I earned a B.A. from International Academy of Design &amp; Technology.</h2>
+<h2 class="plain bottomend-1" id="about_creator">I'm a Developer in New York, NY who currently works at <a href="http://collabfinder.com/company/Groundlink">Groundlink</a>. Previously, I've worked at <a href="http://collabfinder.com/company/VocabSushi.com">VocabSushi.com</a>, <a href="http://collabfinder.com/company/FareShareNYC.com">FareShareNYC.com</a>, <a href="http://collabfinder.com/company/Poorsquare.us">Poorsquare.us</a>, <a href="http://collabfinder.com/company/PatientCommunicator.com">PatientCommunicator.com</a>, <a href="http://collabfinder.com/company/Cnvrge.com">Cnvrge.com</a>. I earned a B.A. from Johns Hopkins University.</h2>
 </div>
 <div class="clear"></div>
 <div class="column span-18 append-1 border_t_g first last">
 <h2 class="toppend-1">Description</h2>
-<h2 class="plain">UPDATE 03/13/2013: LocalLux website has launched! sign up for beta access at:<br/>
+<h2 class="plain">The following is fully explained in a blog post at:<br/>
 <br/>
-<a href="http://www.localluxapp.com">http://www.localluxapp.com</a><br/>
+<a href="http://planetjeffro.com/post/46796717580/nyc-noise-map-api-idea">http://planetjeffro.com/post/46796717580/nyc-noise-map-api-idea</a><br/>
 <br/>
-LocalLux aka &quot;Local Luxury&quot; is a subscription based application with a business model similar to existing product subscription companies such as 12 Society and The Five Four Club.<br/>
+&gt;&gt; iOS app that captures noise:<br/>
 <br/>
-The missing component in both the mentioned companies is their local impact. There are great small businesses in our local area that offer great products but don&#039;t have the nearby foot traffic of a Chicago Michigan Ave or New York Madison Ave.<br/>
+This would be a “data collecting” app (so, not much design) that one would put on a windowsill, for example. The app would passively record traffic noise. It would be calibrated with an acceptable decibel level as normal. Any spike (ie, a horn or a siren, etc) would get captured to the cloud along with the location, timestamp, and other meta data. It would also count the sounds in a backend database. It’s basically a sound activate recorder, but it would require some calibration and would actually record the audio files in a more useful way.<br/>
 <br/>
-LocalLux goal is simple. Provide a smartphone merch environment where local shops can showcase new products via the smartphone application. Consumers sign a monthly subscription agreement and can choose to have the items mailed or packaged up for a pickup. These items are personally selected by our product stylist. It&#039;s their job to make these packages items personal and customized to the customers delight. A tailor made customer service experience is by some reserved for luxury. For LocalLux members that&#039;s everyone experience. Items can range from premium coffee, concert tickets! Businesses who sign up with LocalLux will gain the audience and product impact they&#039;ve been looking for without the cost of a pricey shopping location.<br/>
+&gt;&gt; A website and back-end to classify captured noise:<br/>
+The above app will be importing many isolated sound files of noises (honking, ambulance sirens, etc) and the classification will be done automatically or through crowdsourcing/outsourcing.<br/>
 <br/>
-The product is in the brainstorming phase and I&#039;m looking for a programmer and writer to consult on the projects scope.</h2>
+&gt;&gt; Public API of NYC Noise:<br/>
+<br/>
+All of the above will feed into a publicly accessible API that could be queried by:<br/>
+<br/>
+GPS/location + radius<br/>
+Type of noise<br/>
+Date/Time<br/>
+Aggregate by cohort (hour, day of week, type of noise, location, etc)<br/>
+The API would also deliver the actual recordings so users could quickly create sound maps as well to hear what an intersection sounds like, for example.<br/>
+<br/>
+This API would represent the first data-set that measures NYC noise.<br/>
+<br/>
+&gt;&gt; Imagine the applications of a Noise API:<br/>
+<br/>
+I’d create a simple “noise map” website using the noise API that would allow users to explore NYC through noise. This would merely represent a use-case of the API. There are many, many other uses of the data that I can imagine, and I know the ingenuity and innovation of NYC techies will find even more interesting ways to utilize the data.<br/>
+<br/>
+They say you can’t manage what you can’t measure.<br/>
+<br/>
+Earlier this year, New York City decided to remove all the “Don’t Honk” signs. (<a href="http://www.nytimes.com/2013/01/29/nyregion/new-york-removes-no-honking-signs.html?_r=0">http://www.nytimes.com/2013/01/29/nyregion/new-york-removes-no-honking-signs.html?_r=0</a>) A paragraph jumped out at me:<br/>
+<br/>
+// But interviews with officials, residents and cabbies suggest that it is virtually impossible to tell whether honking has decreased in New York City, or to gauge how effective the signs have been. Many said they believed honking had been curbed somewhat, but wondered if they had simply stopped noticing it, allowing the horn to become the ambient soundtrack of their days.//<br/>
+<br/>
+I call BS on that. It is not impossible, it just hasn’t been tried yet. I hate honking with a passion and right now what’s needed is a general way to measure traffic noise.<br/>
+<br/>
+According to NYC Big Apps, one of the options is to produce a new data set that the city can use.<br/>
+<br/>
+I am looking for an iOS developer who is familiar with the recording capabilities of an iphone. I am also looking for a web developer who is familiar with building an API backend and would have a sense of data architecture for something like this.</h2>
 <div class="clear toppend-2"></div>
 </div>
 <div class="column span-18 append-1 border_t_g first last">
 <h2 class="toppend-1 bottomend-half">Goals</h2>
 <ul id="project_goals">
-<li>DevBuild LocalLux 1.0 for iOS</li>
-<li>Retain Businesses for Marketplace</li>
-<li>Produce a video kickstarter campaign</li>
+<li>Release ios App so anyone can contribute their device</li>
+<li>Release a public API so anyone can utilize the data for their own mashups and applications</li>
 </ul>
 </div>
  
@@ -411,6 +457,68 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 			</div>
 			 
 
+		      		        <div id="project_question_57" class="column span-15 append-4 toppend-half bottomend-half border_t_g first last comment j_project_question" data-question-id="57">
+	<div class="column first">
+          <img class="avatar_large" src="https://graph.facebook.com/100000072272266/picture?type=square"/>
+    	</div>
+	<div class="column span-13 last">
+      <h4><a href="http://collabfinder.com/person/john.novatnack">John Novatnack</a></h4>
+    <h4 class="plain">I think this is an interesting idea, but I wonder if a mobile app is the best way to acquire the data.  Personally I&#039;d prefer to run this from a stationary computer that has a microphone attached to my outside window.  Much safer for the device and you&#039;ll also probably make it more likely to get data from users all day long.<br/>
+<br/>
+Have you considered building this is a HTML5 web app or possibly chrome extension?</h4>
+    <h5 class="light_text plain timestamp">1 week ago</h5>
+			</div>
+	</div>
+ 
+<div id="project_question_answers_57">
+      <div id="project_question_answer_27" class="column span-15 prepend-2 append-2 toppend-half bottomend-half border_t_g first last comment j_project_answer" data-answer-id="27" data-question-id="57">
+	<div class="column first">
+    <img class="avatar_large" src="https://graph.facebook.com/103757/picture?type=square"/>
+	</div>
+	<div class="column span-13 last">
+  <h4>
+    <a href="http://collabfinder.com/person/jeffnovich">Jeff Novich</a>
+     
+      &nbsp;<span class="small red">PROJECT CREATOR</span>
+      </h4>
+    <h4 class="plain">Hey John - Really good suggestion. My thinking around this was to have a very low-cost, small-footprint way to monitor sound.  It could certainly be a web or desktop app, but then you&#039;ll need a laptop + a microphone which is pretty cumbersome.  If this were an iOS app, I would personally get a few used (older model) iphones and ping my network for ideal locations. I&#039;d go plug the iphone in, connect it to their wifi and let it sit somewhere for a day or a week, pick it back up and move it to a new location.  It isn&#039;t particularly hard to ask a friend to &quot;rent&quot; a plug, wifi and a spot on their fire escape. It is pretty cumbersome to ask that they run a desktop app with a mic and not mess with it for a period of time.<br/>
+<br/>
+The goal is to develop a proof of concept that this process could be deployed cheaply (an app + a few old iphones near wifi and power) and could generate a lot of valuable data.  I think a mobile device is ideally suited for that goal.<br/>
+<br/>
+Another point that I don&#039;t think I articulated very well is that this would be a process owned and run by an agency -such as the TLC or DoT.  I don&#039;t see this working effectively as a purely &quot;crowd sourced&quot; service (though maybe at some point).  So you&#039;re probably thinking about how to get an average user to take their own iPhone and stick it out the window for a day in the name of noise data.  I agree that&#039;s a hard bargain and I don&#039;t think many people will do that, which is why I&#039;d kick it off by personally placing the devices myself to learn more.<br/>
+<br/>
+Does that make sense?   What do you think?</h4>
+    <h5 class="light_text plain timestamp">6 days ago</h5>
+			</div>
+</div>
+  </div>
+		      		        <div id="project_question_24" class="column span-15 append-4 toppend-half bottomend-half border_t_g first last comment j_project_question" data-question-id="24">
+	<div class="column first">
+          <img src="//collabfinder.com/images/default_avatar.jpg?v=1365807841" class="avatar_large"/>
+    	</div>
+	<div class="column span-13 last">
+      <h4>Peter</h4>
+    <h4 class="plain">It&#039;s really sad to see such a valuable tool NOT be available for those that have Android devices. Residents could use this tool to finally gather and display the constant honking by livery cabs. 311 is a joke to file noise complaint. The reports stating decrease noise complaints is mainly due to residents giving up reporting it when nothing gets done.</h4>
+    <h5 class="light_text plain timestamp">12 days ago</h5>
+			</div>
+	</div>
+ 
+<div id="project_question_answers_24">
+      <div id="project_question_answer_12" class="column span-15 prepend-2 append-2 toppend-half bottomend-half border_t_g first last comment j_project_answer" data-answer-id="12" data-question-id="24">
+	<div class="column first">
+    <img class="avatar_large" src="https://graph.facebook.com/103757/picture?type=square"/>
+	</div>
+	<div class="column span-13 last">
+  <h4>
+    <a href="http://collabfinder.com/person/jeffnovich">Jeff Novich</a>
+     
+      &nbsp;<span class="small red">PROJECT CREATOR</span>
+      </h4>
+    <h4 class="plain">Hi Peter - Totally agree! Obviously I&#039;d love to see this on all devices but have to start somewhere. Unless you know an Android developer who wants to help? I agree that the level of effort to report complaints is way too high and if they were lower, people might actually respond more. I have personally gone through the 311 complaint process, all the way to speaking with a TLC prosecutor (3 months later) but they didn&#039;t feel my case had enough evidence. I will write a lengthy blog post about the entire process because I think there&#039;s value in knowing that your complaints actually do get dealt with (eventually) and drivers are held accountable (eventually). Though it helps to have video footage of the incident, which is insanely inconvenient for residents. (More on that too, on planetjeffro.com, soon)</h4>
+    <h5 class="light_text plain timestamp">12 days ago</h5>
+			</div>
+</div>
+  </div>
 		      	
 	  		<div class="clear toppend-4"></div>
 		</div>
@@ -422,7 +530,7 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 				
 			    
 				
-			    <a id="button-project-member-actions" data-url="/project/" data-initial-state="" data-state-change-data='{ "project_id" : 22 }' href="#" class="btn btn_wide btn_toggle">
+			    <a id="button-project-member-actions" data-url="/project/" data-initial-state="" data-state-change-data='{ "project_id" : 120 }' href="#" class="btn btn_wide btn_toggle">
 			      <center>
 			        <div id="join" data-state='[ null, -1 ]' data-verb='join' data-next-state=0 data-track-key="Join Project" class="relative">
 			          JOIN PROJECT
@@ -442,7 +550,7 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 				<div class="clear border_t_g toppend-half"></div>
 				
 				<ul>
-					<li><div class="check check_skillset"><span>¬</span></div>Needs <b>Developers</b></li><li><div class="check check_skillset"><span>¬</span></div>Needs <b>Designers</b></li><li><div class="check check_skillset"><span>¬</span></div>Needs <b>Artists</b></li><li><div class="check check_skillset"><span>¬</span></div>Needs <b>Writers</b></li>				</ul>
+					<li><div class="check check_skillset"><span>¬</span></div>Needs <b>Developers</b></li>				</ul>
 				
 			</div>
 			
@@ -471,15 +579,15 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 				 
 		    	<h4 class="border_t_g toppend-1"><span class="relative"><span class="number_bubble">2 </span>&nbsp;Contributors</span></h4>
 				<ul class="connections contributors">
-		      				  	<li class="light_text"><a href="http://collabfinder.com/person/suraju.jolaoso"><img src="https://graph.facebook.com/100000692763064/picture?type=square" class="avatar_small"></a><span><span><a href="http://collabfinder.com/person/suraju.jolaoso">Suraju Jolaoso</a><br/>
-                    <a href="http://collabfinder.com/people?bg=4" class="plain">Writer</a> 
-                    in <a href="http://collabfinder.com/people?location=Washington%2C+DC" class="plain">Washington, DC</a>
+		      				  	<li class="light_text"><a href="http://collabfinder.com/person/federicobucchi"><img src="https://graph.facebook.com/836738679/picture?type=square" class="avatar_small"></a><span><span><a href="http://collabfinder.com/person/federicobucchi">Federico Bucchi</a><br/>
+                    <a href="http://collabfinder.com/people?bg=1" class="plain">Developer</a> 
+                    in <a href="http://collabfinder.com/people?location=San+Francisco%2C+CA" class="plain">San Francisco, CA</a>
 		            	  						</span>
 					</span>
 				</li>
-							  	<li class="light_text"><a href="http://collabfinder.com/person/randyellis.me"><img src="https://graph.facebook.com/100002690755847/picture?type=square" class="avatar_small"></a><span><span><a href="http://collabfinder.com/person/randyellis.me">Randy Ellis</a><br/>
-                    <a href="http://collabfinder.com/people?bg=2" class="plain">Designer</a> 
-                    in <a href="http://collabfinder.com/people?location=Chicago%2C+IL" class="plain">Chicago, IL</a>
+							  	<li class="light_text"><a href="http://collabfinder.com/person/jeffnovich"><img src="https://graph.facebook.com/103757/picture?type=square" class="avatar_small"></a><span><span><a href="http://collabfinder.com/person/jeffnovich">Jeff Novich</a><br/>
+                    <a href="http://collabfinder.com/people?bg=1" class="plain">Developer</a> 
+                    in <a href="http://collabfinder.com/people?location=New+York%2C+NY" class="plain">New York, NY</a>
 		            	  						</span>
 					</span>
 				</li>
@@ -493,11 +601,14 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 		    <div class="column span-6 border_t_g first last">
 	  	  		<h4 class="toppend-1 bottomend-half">Tagged</h4>
 	  	 		<ul class="bottomend-1 attributes tags">
-	  	       	     	  				  <li><a href="/project/?interests=iOS+apps">iOS apps</a></li>
-	  				  	  				  <li><a href="/project/?interests=iOS+Development">iOS Development</a></li>
-	  				  	  				  <li><a href="/project/?interests=Start+Ups">Start Ups</a></li>
-	  				  	  				  <li><a href="/project/?interests=Mobile+app">Mobile app</a></li>
-	  				  	  				  <li><a href="/project/?interests=Local+Shopping+Services">Local Shopping Services</a></li>
+	  	       	     	  				  <li><a href="/project/?interests=Healthy+Living">Healthy Living</a></li>
+	  				  	  				  <li><a href="/project/?interests=Honking">Honking</a></li>
+	  				  	  				  <li><a href="/project/?interests=Traffic+Noise">Traffic Noise</a></li>
+	  				  	  				  <li><a href="/project/?interests=Create+a+Dataset">Create a Dataset</a></li>
+	  				  	  				  <li><a href="/project/?interests=iOS+apps">iOS apps</a></li>
+	  				  	  				  <li><a href="/project/?interests=The+Cleanweb">The Cleanweb</a></li>
+	  				  	  				  <li><a href="/project/?interests=Wildcard+App">Wildcard App</a></li>
+	  				  	  				  <li><a href="/project/?interests=NYC+BigApps">NYC BigApps</a></li>
 	  				  	  	 	        <div class="fade"></div>
 	  	 	    </ul>
 			</div>
@@ -552,7 +663,7 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
   				<div class="clear toppend-1 border_b_g"></div>
   				<div class="clear toppend-1"></div>
           <span class="fb_share">
-            <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fcollabfinder.com%2F&text=Check+out+CollabFinder+project+LocalLux%3A+A+iOS+membership%2Fsubscription+service+that+allows+members+to+sample+great+products+from+local+businesses.&url=http%3A%2F%2Fcollabfinder.com%2Fproject%2F22%2FLocalLux-A-iOS-membershipsubscription-service-that-allows-members-to-sample-great-products-from-local-businesses" class="btn btn_wide">Tweet Project</a>
+            <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fcollabfinder.com%2F&text=Check+out+CollabFinder+project+NYC+Traffic+Noise+API&url=http%3A%2F%2Fcollabfinder.com%2Fproject%2F120%2FNYC-Traffic-Noise-API" class="btn btn_wide">Tweet Project</a>
   				  <a href="#" class="btn btn_wide share_popup">Share on Facebook</a>
           </span>
   			</center>
@@ -568,19 +679,19 @@ The product is in the brainstorming phase and I&#039;m looking for a programmer 
 <script type="text/javascript">
   Collab.Data.Project = {};
   Collab.Data.Project.Urls = {};
-  Collab.Data.Project.projectId = 22;
-  Collab.Data.Project.projectUrl = "http://collabfinder.com/project/22/LocalLux-A-iOS-membershipsubscription-service-that-allows-members-to-sample-great-products-from-local-businesses";
-  Collab.Data.Project.Urls.projectUrl = "http://collabfinder.com/project/22/LocalLux-A-iOS-membershipsubscription-service-that-allows-members-to-sample-great-products-from-local-businesses";
-  Collab.Data.Project.Urls.projectEditUrl = "http://collabfinder.com/project/edit/22";
-  Collab.Data.Project.Urls.projectDeleteUrl = "http://collabfinder.com/project/delete/22";
-  Collab.Data.Project.Urls.updateCreateUrl = "http://collabfinder.com/project/22/updates/create";
-  Collab.Data.Project.Urls.updateDeleteUrl = "http://collabfinder.com/project/22/updates/delete";
-  Collab.Data.Project.Urls.questionCreateUrl = "http://collabfinder.com/project/22/questions/create";
-  Collab.Data.Project.Urls.anonQuestionCreateUrl = "http://collabfinder.com/project/22/questions/create_a";
-  Collab.Data.Project.Urls.questionDeleteUrl = "http://collabfinder.com/project/22/questions/delete";
-  Collab.Data.Project.Urls.answerCreateUrl = "http://collabfinder.com/project/22/questions/create_answer";
-  Collab.Data.Project.Urls.answerDeleteUrl = "http://collabfinder.com/project/22/questions/delete_answer";
-  Collab.Data.Project.Urls.emailFollowUrl = "http://collabfinder.com/project/22/follow/email";
+  Collab.Data.Project.projectId = 120;
+  Collab.Data.Project.projectUrl = "http://collabfinder.com/project/120/NYC-Traffic-Noise-API";
+  Collab.Data.Project.Urls.projectUrl = "http://collabfinder.com/project/120/NYC-Traffic-Noise-API";
+  Collab.Data.Project.Urls.projectEditUrl = "http://collabfinder.com/project/edit/120";
+  Collab.Data.Project.Urls.projectDeleteUrl = "http://collabfinder.com/project/delete/120";
+  Collab.Data.Project.Urls.updateCreateUrl = "http://collabfinder.com/project/120/updates/create";
+  Collab.Data.Project.Urls.updateDeleteUrl = "http://collabfinder.com/project/120/updates/delete";
+  Collab.Data.Project.Urls.questionCreateUrl = "http://collabfinder.com/project/120/questions/create";
+  Collab.Data.Project.Urls.anonQuestionCreateUrl = "http://collabfinder.com/project/120/questions/create_a";
+  Collab.Data.Project.Urls.questionDeleteUrl = "http://collabfinder.com/project/120/questions/delete";
+  Collab.Data.Project.Urls.answerCreateUrl = "http://collabfinder.com/project/120/questions/create_answer";
+  Collab.Data.Project.Urls.answerDeleteUrl = "http://collabfinder.com/project/120/questions/delete_answer";
+  Collab.Data.Project.Urls.emailFollowUrl = "http://collabfinder.com/project/120/follow/email";
 
 $( function() {
   Galleria.loadTheme("//collabfinder.com/js/libs/galleria/themes/classic/galleria.collab.js?v=1365807841");
@@ -658,6 +769,6 @@ $( function() {
   <script src="/js/libs/dd_belatedpng.js"></script>
   <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
 <![endif]-->
-<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","866486dc45","1512686","YFVUYUsFCBADAhINW1kfd1ZNDQkNTTEUC15SU0J2VgoSEQ0NCgFGGEBEWlMBBRc=",0,160,new Date().getTime(),"","","","",""]);</script>
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","866486dc45","1512686","YFVUYUsFCBADAhINW1kfd1ZNDQkNTTEUC15SU0J2VgoSEQ0NCgFGGEBEWlMBBRc=",0,156,new Date().getTime(),"","","","",""]);</script>
 </body>
 </html>
